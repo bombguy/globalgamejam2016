@@ -5,7 +5,7 @@ public class Player : MonoBehaviour {
 
     Rigidbody2D rg2D;
     Transform t;
-    float v = 2;
+    float v = 4;
     // Use this for initialization
     void Start()
     {

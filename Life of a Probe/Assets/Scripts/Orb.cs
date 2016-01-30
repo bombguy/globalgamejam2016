@@ -7,7 +7,7 @@ public class Orb : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		lifespan = Random.Range (5f, 10f);
+		
 	}
 		
 	// Update is called once per frame
@@ -21,7 +21,8 @@ public class Orb : MonoBehaviour {
 		Debug.Log (coll.gameObject.name);
 		if (coll.gameObject.name == "Player") {
 			GameInformation.orb_count++;
-			GameInformation.player_health--;
+			GameInformation.special_count--;
+			Debug.Log (GameInformation.special_count);
 			Destroy (this.gameObject);
 		}
 	}
