@@ -10,7 +10,8 @@ public class CrystalSpawnerController : MonoBehaviour {
 
 	void Start () {
 		current_time = 0;
-		spawn_timer = 1;
+		radius = 1.4f;
+		spawn_timer = 5;
 		current_position = this.gameObject.transform;
 	}
 
