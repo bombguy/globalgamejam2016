@@ -54,7 +54,7 @@ public class OVRTracker
 	public bool isPresent
 	{
 		get {
-			if (!OVRManager.isHmdPresent)
+			if (!VR.VRDevice.isPresent)
 				return false;
 
 			return OVRPlugin.positionSupported;
@@ -77,14 +77,14 @@ public class OVRTracker
 	public bool isEnabled
 	{
 		get {
-			if (!OVRManager.isHmdPresent)
+			if (!VR.VRDevice.isPresent)
 				return false;
 
 			return OVRPlugin.position;
         }
 
 		set {
-			if (!OVRManager.isHmdPresent)
+			if (!VR.VRDevice.isPresent)
 				return;
 
 			OVRPlugin.position = value;
@@ -97,7 +97,7 @@ public class OVRTracker
 	public Frustum frustum
 	{
 		get {
-			if (!OVRManager.isHmdPresent)
+			if (!VR.VRDevice.isPresent)
 				return new Frustum();
 
             return OVRPlugin.GetTrackerFrustum(OVRPlugin.Tracker.Default).ToFrustum();
@@ -109,7 +109,7 @@ public class OVRTracker
 	/// </summary>
 	public OVRPose GetPose(double predictionTime)
 	{
-		if (!OVRManager.isHmdPresent)
+		if (!VR.VRDevice.isPresent)
 			return OVRPose.identity;
 
 		var p = OVRPlugin.GetTrackerPose(OVRPlugin.Tracker.Default).ToOVRPose();

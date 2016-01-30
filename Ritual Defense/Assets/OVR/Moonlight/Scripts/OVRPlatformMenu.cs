@@ -170,7 +170,7 @@ public class OVRPlatformMenu : MonoBehaviour
 	/// </summary>
 	void Awake()
 	{
-		if (!OVRManager.isHmdPresent)
+		if (!VR.VRDevice.isPresent)
 		{
 			enabled = false;
 			return;

@@ -112,7 +112,7 @@ public class OVRDisplay
 	public Vector3 acceleration
 	{
 		get {			
-			if (!OVRManager.isHmdPresent)
+			if (!VR.VRDevice.isPresent)
 				return Vector3.zero;
 
             OVRPose ret = OVRPlugin.GetEyeAcceleration(OVRPlugin.Eye.None).ToOVRPose();
@@ -126,7 +126,7 @@ public class OVRDisplay
 	public Vector3 angularVelocity
 	{
 		get {
-			if (!OVRManager.isHmdPresent)
+			if (!VR.VRDevice.isPresent)
 				return Vector3.zero;
 
 			OVRPose ret = OVRPlugin.GetEyeVelocity(OVRPlugin.Eye.None).ToOVRPose();
@@ -148,7 +148,7 @@ public class OVRDisplay
 	public LatencyData latency
 	{
 		get {
-			if (!OVRManager.isHmdPresent)
+			if (!VR.VRDevice.isPresent)
 				return new LatencyData();
 
             string latency = OVRPlugin.latency;
@@ -177,7 +177,7 @@ public class OVRDisplay
 
     private void ConfigureEyeDesc(VR.VRNode eye)
 	{
-		if (!OVRManager.isHmdPresent)
+		if (!VR.VRDevice.isPresent)
 			return;
 
 		OVRPlugin.Sizei size = OVRPlugin.GetEyeTextureSize((OVRPlugin.Eye)eye);

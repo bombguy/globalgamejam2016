@@ -50,14 +50,14 @@ public class OVRDebugGraph : MonoBehaviour
 	/// </summary>
 	void Start()
 	{
-		if (!OVRManager.isHmdPresent)
+		if (!VR.VRDevice.isPresent)
 		{
 			enabled = false;
 			return;
 		}
 
 		OVRPlugin.debugDisplay = (debugMode != DebugPerfMode.DEBUG_PERF_OFF);
-		OVRPlugin.collectPerf = (debugMode != DebugPerfMode.DEBUG_PERF_FROZEN);
+		OVRPlugin.collectPerf = (debugMode == DebugPerfMode.DEBUG_PERF_FROZEN);
 	}
 
 	/// <summary>
