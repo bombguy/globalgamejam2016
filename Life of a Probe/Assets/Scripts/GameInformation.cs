@@ -7,7 +7,7 @@ public class GameInformation : MonoBehaviour {
 	public static int player_health;
 
 	public int hp_degen_time;
-	public float timer;
+	public static float timer;
 
 	void Start() {
 		orb_count = 0;

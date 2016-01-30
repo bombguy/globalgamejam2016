@@ -22,7 +22,7 @@ public class Orb : MonoBehaviour {
 		if (coll.gameObject.name == "Player") {
 			GameInformation.orb_count++;
 			GameInformation.special_count--;
-			Debug.Log (GameInformation.special_count);
+			GameInformation.timer = 0;
 			Destroy (this.gameObject);
 		}
 	}

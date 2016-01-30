@@ -9,7 +9,7 @@ public class ManaSpawnerController : MonoBehaviour {
 	public Transform current_position;
 
 	void Start () {
-		mana_spawn_time = 0;
+		mana_spawn_time = 18;
 		current_position = this.gameObject.transform;
 	}
 
