@@ -21,7 +21,7 @@ public class Orb : MonoBehaviour {
 		Debug.Log (coll.gameObject.name);
 		if (coll.gameObject.name == "Player") {
 			GameInformation.orb_count++;
-			//GameInformation.player_health--;
+			GameInformation.player_health--;
 			Destroy (this.gameObject);
 		}
 	}
