@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class CrystalSpawnerController : MonoBehaviour {
-	public int radius;
+	public float radius;
 	public int spawn_timer;
 	public float current_time;
 	public GameObject orb;
@@ -10,7 +10,7 @@ public class CrystalSpawnerController : MonoBehaviour {
 
 	void Start () {
 		current_time = 0;
-		spawn_timer = 3;
+		spawn_timer = 1;
 		current_position = this.gameObject.transform;
 	}
 
@@ -24,7 +24,19 @@ public class CrystalSpawnerController : MonoBehaviour {
 	}
 
 	void spawn_orb() {
-		Debug.Log ("Spawning a orb");
-		Instantiate (orb, new Vector3(current_position.position.x,current_position.position.y,0), Quaternion.identity);
+		int x_direction = (int)(Random.Range (0, 1f) * 2) - 1;
+		int y_direction = (int)(Random.Range (0, 1f) * 2) - 1;
+		//Debug.Log (x_direction + " " + y_direction);
+		float x_offset, y_offset;
+		if (x_direction == 0)
+			x_offset = -Random.Range (0.5f, radius);
+		else
+			x_offset = Random.Range (0.5f, radius);
+		if (y_direction == 0)
+			y_offset = -Random.Range (0.5f, radius);
+		else
+			y_offset = Random.Range (0.5f, radius);
+
+		Instantiate (orb, new Vector3(current_position.position.x+x_offset,current_position.position.y+y_offset,0), Quaternion.identity);
 	}
 }
