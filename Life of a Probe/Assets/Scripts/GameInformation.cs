@@ -5,6 +5,7 @@ public class GameInformation : MonoBehaviour {
 	public static int orb_count;
 	public static int special_count;
 	public static int player_health;
+    public static int level;
 
 	public int hp_degen_time;
 	public static float timer;
@@ -16,6 +17,7 @@ public class GameInformation : MonoBehaviour {
 		orb_count = 0;
 		special_count = 0;
 		player_health = 5;
+        level = 1;
 	}
 
 	void Update() {
