@@ -8,14 +8,16 @@ public class SpecialCount : MonoBehaviour {
 
 	void Start() {
 		textarea = GetComponent<Text> ();
+		special_icon.GetComponent<Image> ().sprite = Resources.Load <Sprite> ("Sprites/DragonOrb");
 	}
 	// Update is called once per frame
 	void Update () {
-		if (GameInformation.special_count >= 0) {
-			special_icon.GetComponent<Image> ().sprite = Resources.Load <Sprite> ("Sprites/AngelOrb");
-		} else {
-			special_icon.GetComponent<Image> ().sprite = Resources.Load <Sprite> ("Sprites/DragonOrb");
-		}
+//		if (GameInformation.special_count >= 0) {
+//			special_icon.GetComponent<Image> ().sprite = Resources.Load <Sprite> ("Sprites/AngelOrb");
+//		} else {
+//			special_icon.GetComponent<Image> ().sprite = Resources.Load <Sprite> ("Sprites/DragonOrb");
+//		}
+
 		textarea.text = GameInformation.special_count.ToString();
 	}
 }

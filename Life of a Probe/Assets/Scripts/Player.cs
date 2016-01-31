@@ -1,14 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
-
+	public SpriteRenderer player_image;
+	public Sprite normal;
+	public Sprite special;
     Rigidbody2D rg2D;
     Transform t;
     float v = 4;
     // Use this for initialization
     void Start()
     {
+		player_image = this.GetComponent<SpriteRenderer> ();
+		normal = Resources.Load <Sprite> ("Sprites/Main Char2");
+		special = Resources.Load <Sprite> ("Sprites/Main Char Power Up");
         rg2D = GetComponent<Rigidbody2D>();
         t = GetComponent<Transform>();
     }
@@ -37,5 +43,14 @@ public class Player : MonoBehaviour {
         {
             t.position += Vector3.right * v * Time.deltaTime;
         }
+		if (GameInformation.special_count == 3) {
+			Debug.Log ("AHHHH! Im evolving!");
+			GameInformation.power_up_duration = 10;
+			GameInformation.special_count = 0;
+			player_image.sprite = special;
+		}
+		else if (GameInformation.power_up_duration <= 0) {
+			player_image.sprite = normal;
+		}
     }
 }

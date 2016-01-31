@@ -8,6 +8,7 @@ public class GameInformation : MonoBehaviour {
 
 	public int hp_degen_time;
 	public static float timer;
+	public static float power_up_duration;
 
 	void Start() {
 		orb_count = 0;
@@ -20,6 +21,7 @@ public class GameInformation : MonoBehaviour {
 			Debug.Log ("GameOver");
 		}
 		timer += Time.deltaTime;
+		power_up_duration -= Time.deltaTime;
 		if (timer >= hp_degen_time) {
 			player_health--;
 			timer = 0;

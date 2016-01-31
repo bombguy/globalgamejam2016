@@ -1,15 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-
-public class Orb : MonoBehaviour {
+public class special_orb : MonoBehaviour {
 	public float lifespan;
 
 	// Use this for initialization
 	void Start () {
 		
 	}
-		
+
 	// Update is called once per frame
 	void Update () {
 		lifespan -= Time.deltaTime;
@@ -20,14 +19,8 @@ public class Orb : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D coll) {
 		Debug.Log (coll.gameObject.name);
 		if (coll.gameObject.name == "Player") {
-			GameInformation.orb_count++;
-			GameInformation.timer = 0;
+			GameInformation.special_count++;
 			Destroy (this.gameObject);
 		}
 	}
 }
-
-
-	
-
-	
