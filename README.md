@@ -130,16 +130,28 @@ For the versions available, see the [tags on this repository](https://github.com
 
 ## Authors
 
-* **Charles** - [bombguy](https://github.com/bombguy)
-* **Chris** - [ingochris](https://github.com/ingochris)
-* **Igor** - [demonictomato](https://github.com/demonictomato)
-* **Isidro** - [igomez92](https://github.com/igomez92)
-* Natasha
-* Pooja
-* Shruti
-* Skandy
+###Developers
 
-See the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Charles Shin** - [bombguy](https://github.com/bombguy)
+* **Christopher Ngo** - [ingochris](https://github.com/ingochris)
+* **Isidro Gomez** - [igomez92](https://github.com/igomez92)
+ 
+###Artwork
+
+* **Igor Akimenko** - [demonictomato](https://github.com/demonictomato)
+
+###Music
+
+* Dolan Lucero
+* Xiaohan Zhang
+
+###Thanks
+
+* Adela Chang
+* Jordan Yuen
+* Victor Phung
+
+See the full list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
