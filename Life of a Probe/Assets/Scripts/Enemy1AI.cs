@@ -11,6 +11,7 @@ public class Enemy1AI : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		player = GameObject.Find ("Player");
         //flames = GetComponents<SpriteRenderer>();
 	}
 

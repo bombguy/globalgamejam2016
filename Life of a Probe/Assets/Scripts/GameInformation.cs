@@ -5,6 +5,7 @@ public class GameInformation : MonoBehaviour {
 	public static int orb_count;
 	public static int special_count;
 	public static int player_health;
+	public static int[] orb_to_next_level;
     public static int level;
 
 	public int hp_degen_time;
@@ -12,12 +13,14 @@ public class GameInformation : MonoBehaviour {
 	public static float power_up_duration;
 	public static bool power_up;
 
+
 	void Start() {
 		power_up = false;
 		orb_count = 0;
+		orb_to_next_level = new int[] {5, 11, 18, 26, 35, 45};
 		special_count = 0;
 		player_health = 5;
-        level = 1;
+        level = 0;
 	}
 
 	void Update() {
