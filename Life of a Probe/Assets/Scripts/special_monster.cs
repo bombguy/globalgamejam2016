@@ -18,9 +18,12 @@ public class special_monster : MonoBehaviour {
 			GetComponent<ParticleSystem> ().Play ();
             MusicManager.mfiles[1].Play();
             GameInformation.score += (GameInformation.level+1) * 100;
-			Destroy (this.gameObject, .3f);
-		} else if (coll.gameObject.name == "Player" && !GameInformation.power_up){
+			Camera.main.GetComponent<CameraShakeScript>().shakeAmount = .5f;
+			Camera.main.GetComponent<CameraShakeScript>().shake = .5f;
+			Destroy (this.gameObject, .5f);
+		} else if (coll.gameObject.name == "Player" && !GameInformation.power_up && GameInformation.god_mode < 0){
 			GameInformation.player_health--;
+			GameInformation.god_mode = 1.5f;
 		}
 	}
 }

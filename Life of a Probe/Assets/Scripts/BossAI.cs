@@ -18,13 +18,8 @@ public class BossAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-       
             directionOfPlayer = player.transform.position - transform.position;
             directionOfPlayer = directionOfPlayer.normalized;
-            transform.Translate(directionOfPlayer * speed / (3 - (GameInformation.level * .5f)), Space.World);
-
-        
-        
+            transform.Translate(directionOfPlayer * speed / (3 - (GameInformation.level * .2f)), Space.World);
     }
 }

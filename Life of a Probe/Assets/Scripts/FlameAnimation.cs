@@ -39,9 +39,10 @@ public class FlameAnimation : MonoBehaviour {
 	}
     void OnTriggerEnter2D(Collider2D coll)
     {
-        if (coll.gameObject.name == "Player" && !GameInformation.power_up)
+		if (coll.gameObject.name == "Player" && !GameInformation.power_up && GameInformation.god_mode < 0)
         {
             GameInformation.player_health--;
+			GameInformation.god_mode = 1.5f;
             MusicManager.mfiles[1].Play();
         }
     }

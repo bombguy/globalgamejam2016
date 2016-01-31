@@ -3,13 +3,12 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class scenemanager : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		Invoke( "ChangeLevel", 3.0f );
+	void Start() {
+		Invoke ("Main_Menu", 3f);
 	}
 
-	void ChangeLevel() {
-		SceneManager.LoadScene ("Menu Screen");
+	public void Main_Menu() {
+		Application.UnloadLevel ("Credit");
+		Application.LoadLevel ("Menu Screen");
 	}
 }
