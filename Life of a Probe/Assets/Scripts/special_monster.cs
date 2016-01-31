@@ -16,8 +16,7 @@ public class special_monster : MonoBehaviour {
 		if (GameInformation.power_up) {
 			GetComponent<ParticleSystem> ().Play ();
 			Destroy (this.gameObject, .3f);
-		} else {
-			
+		} else if (coll.gameObject.name == "Player"){
 			GameInformation.player_health--;
 		}
 	}
