@@ -12,7 +12,7 @@ public class special_spawner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		special_spawn_time = 15;
+		special_spawn_time = 11;
 		monster_count = GameInformation.orb_count;
 	}
 
