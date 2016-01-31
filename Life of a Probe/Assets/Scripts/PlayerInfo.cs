@@ -33,7 +33,8 @@ public class PlayerInfo : MonoBehaviour {
 		*/
 		for (int i = 0; i < GameInformation.player_health; i++)
 			health [i].SetActive (true);
-		for (int i = GameInformation.player_health; i < 5; i++)
-			health [i].SetActive (false);
+		if(GameInformation.player_health > -1)
+			for (int i = GameInformation.player_health; i < 5; i++)
+				health [i].SetActive (false);
 	}
 }

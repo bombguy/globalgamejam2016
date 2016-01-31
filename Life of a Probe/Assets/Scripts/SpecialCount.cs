@@ -8,7 +8,7 @@ public class SpecialCount : MonoBehaviour {
 
 	void Start() {
 		textarea = GetComponent<Text> ();
-		special_icon.GetComponent<Image> ().sprite = Resources.Load <Sprite> ("Sprites/DragonOrb");
+		special_icon.GetComponent<Image> ().sprite = Resources.Load <Sprite> ("Sprites/DragonOrb2");
 	}
 	// Update is called once per frame
 	void Update () {

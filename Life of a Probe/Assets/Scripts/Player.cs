@@ -43,13 +43,13 @@ public class Player : MonoBehaviour {
         {
             t.position += Vector3.right * v * Time.deltaTime;
         }
-		if (GameInformation.special_count == 3) {
+		if (GameInformation.special_count == 1) {
 			Debug.Log ("AHHHH! Im evolving!");
 			GameInformation.power_up_duration = 10;
 			GameInformation.special_count = 0;
 			player_image.sprite = special;
 		}
-		else if (GameInformation.power_up_duration <= 0) {
+		else if (!GameInformation.power_up) {
 			player_image.sprite = normal;
 		}
     }

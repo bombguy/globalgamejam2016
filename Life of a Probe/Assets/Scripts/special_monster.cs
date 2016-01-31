@@ -13,7 +13,12 @@ public class special_monster : MonoBehaviour {
 	
 	}
 	void OnTriggerEnter2D(Collider2D coll) {
-		GameInformation.player_health--;
-		Debug.Log (coll.gameObject.name);
+		if (GameInformation.power_up) {
+			GetComponent<ParticleSystem> ().Play ();
+			Destroy (this.gameObject, .3f);
+		} else {
+			
+			GameInformation.player_health--;
+		}
 	}
 }
