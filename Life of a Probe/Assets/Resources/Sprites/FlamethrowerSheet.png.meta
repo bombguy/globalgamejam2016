@@ -1,0 +1,143 @@
+fileFormatVersion: 2
+guid: 6c89f6d4caa7ee247af203234873724e
+timeCreated: 1454263691
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: FlamethrowerSheet_0
+    21300002: FlamethrowerSheet_1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: FlamethrowerSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 611
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 305.5, y: -108}
+        - {x: 305.5, y: -25}
+        - {x: 301.5, y: -3}
+        - {x: 276.5, y: 12}
+        - {x: 305.5, y: 38}
+        - {x: 305.5, y: 97}
+        - {x: 291.5, y: 111}
+        - {x: 186.5, y: 111}
+        - {x: 140.5, y: 95}
+        - {x: 103.5, y: 83}
+        - {x: 44.5, y: 85}
+        - {x: -15.5, y: 63}
+        - {x: -52.5, y: 52}
+        - {x: -137.5, y: 47}
+        - {x: -153.5, y: 61}
+        - {x: -253.5, y: 69}
+        - {x: -305.5, y: 35}
+        - {x: -305.5, y: -20}
+        - {x: -294.5, y: -31}
+        - {x: -281.5, y: -37}
+        - {x: -248.5, y: -50}
+        - {x: -215.5, y: -59}
+        - {x: -164.5, y: -56}
+        - {x: -55.5, y: -62}
+        - {x: 7.5, y: -56}
+        - {x: 59.5, y: -64}
+        - {x: 79.5, y: -52}
+        - {x: 118.5, y: -86}
+        - {x: 130.5, y: -111}
+        - {x: 294.5, y: -111}
+    - name: FlamethrowerSheet_1
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 0
+        width: 611
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 267.5, y: 6}
+        - {x: 247.5, y: 4}
+        - {x: 264.5, y: 24}
+        - {x: 267.5, y: 32}
+        - {x: 253.5, y: 35}
+        - {x: 273.5, y: 101}
+        - {x: 272.5, y: 17}
+        - {x: 287.5, y: 22}
+        - {x: 305.5, y: 38}
+        - {x: 305.5, y: 97}
+        - {x: 290.5, y: 111}
+        - {x: 175.5, y: 111}
+        - {x: 116.5, y: 93}
+        - {x: 113.5, y: 89}
+        - {x: 112.5, y: 77}
+        - {x: 112.5, y: 79}
+        - {x: 111.5, y: 82}
+        - {x: 86.5, y: 90}
+        - {x: 82.5, y: 51}
+        - {x: -53.5, y: 52}
+        - {x: -254.5, y: 69}
+        - {x: -305.5, y: 44}
+        - {x: -305.5, y: -23}
+        - {x: -300.5, y: -41}
+        - {x: -215.5, y: -59}
+        - {x: -55.5, y: -62}
+        - {x: 43.5, y: -62}
+        - {x: 126.5, y: -111}
+        - {x: 297.5, y: -111}
+        - {x: 305.5, y: -96}
+        - {x: 305.5, y: -24}
+        - {x: 298.5, y: -6}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
