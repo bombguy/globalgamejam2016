@@ -20,6 +20,10 @@ public class special_orb : MonoBehaviour {
 		Debug.Log (coll.gameObject.name);
 		if (coll.gameObject.name == "Player") {
 			GameInformation.special_count++;
+            GameInformation.score += 50;
+           
+            if(GameInformation.player_health != 5)
+                GameInformation.player_health++;
 			Destroy (this.gameObject);
 		}
 	}

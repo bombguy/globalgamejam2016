@@ -6,7 +6,6 @@ public class Player : MonoBehaviour {
 	public SpriteRenderer player_image;
 	public Sprite normal;
 	public Sprite special;
-    Rigidbody2D rg2D;
     Transform t;
     float v = 4;
     // Use this for initialization
@@ -15,31 +14,30 @@ public class Player : MonoBehaviour {
 		player_image = this.GetComponent<SpriteRenderer> ();
 		normal = Resources.Load <Sprite> ("Sprites/Main Char2");
 		special = Resources.Load <Sprite> ("Sprites/Main Char Power Up");
-        rg2D = GetComponent<Rigidbody2D>();
         t = GetComponent<Transform>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             t.position += Vector3.up * v * Time.deltaTime;
             //rg2D.MovePosition(new Vector2(t.position.x, t.position.y + 1) * v);
             //t.position.y += 5;
         }
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             t.position += Vector3.left * v * Time.deltaTime;
         }
 
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             t.position += Vector3.down * v * Time.deltaTime;
         }
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             t.position += Vector3.right * v * Time.deltaTime;
         }

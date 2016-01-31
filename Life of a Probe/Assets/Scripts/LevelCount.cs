@@ -13,6 +13,7 @@ public class LevelCount : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        textarea.text = "   Current Level: " + GameInformation.level.ToString();
+        textarea.text = "   Current Level: " + GameInformation.level + "\n" +
+                        "   Score: " + GameInformation.score;
     }
 }

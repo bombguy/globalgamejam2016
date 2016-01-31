@@ -2,34 +2,28 @@
 using System.Collections;
 
 public class Enemy1AI : MonoBehaviour {
-	public GameObject player;
-	public float speed=0.05F;
-	public Vector2 directionOfPlayer;
-	public bool active = false;
 
-    public SpriteRenderer[] flames;
-
+    Transform t;
+    Vector3 dir;
+    float speed; 
 	// Use this for initialization
 	void Start () {
-		player = GameObject.Find ("Player");
+        t = GetComponent<Transform>();
+        if ((int)(Random.value * 10) % 2 == 0)
+            dir = Vector3.up;
+        else
+            dir = Vector3.right;
         //flames = GetComponents<SpriteRenderer>();
+        speed = 3f;
 	}
 
 	// Update is called once per frame
 	void Update () {
-        flames = GetComponents<SpriteRenderer>();
-        if (active)
-        {
-            directionOfPlayer = player.transform.position - transform.position;
-            directionOfPlayer = directionOfPlayer.normalized;
-            transform.Translate(directionOfPlayer * speed, Space.World);
-
-        }
-        else
-        {
-            Debug.Log("I should deactivate flames!");
-            for (int x = 0; x < 4; x++)
-                flames[x].enabled = false;
-        }
+        t.position += dir * speed * Time.deltaTime;
 	}
+
+    void OnTriggerEnter2D(Collider2D coll)
+    {
+        speed *= -1;
+    }
 }
