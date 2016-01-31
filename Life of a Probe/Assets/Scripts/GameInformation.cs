@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameInformation : MonoBehaviour {
 	public static int orb_count;
@@ -27,7 +28,7 @@ public class GameInformation : MonoBehaviour {
 
 	void Update() {
 		if (player_health <= 0) {
-			Debug.Log ("GameOver");
+			SceneManager.LoadScene ("Game Over");
 		}
 
 		timer += Time.deltaTime;
