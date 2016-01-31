@@ -1,9 +1,7 @@
 # Life of a Probe
 *#globalgamejam2016*
 
-You are a young magician wishing to test your summoning limits.
-Collect mana orbs to power your summon. 
-Collect Dream or Dragon orbs to choose your possession. But collecting both will cancel each other. While possessed, picking up a mana orb will give you a charge of Q power to defeat your enemies. Kill enemies and bosses quickly before your possession expires!
+You are a young magician entering the dream world to test your summoning limits. Collect white mana orbs to summon Fire Demons, which contributes to the grand ritual of summoning a Fire Lord. Then, collect red possession orbs to gain the ability to steal the demons’ powers for yourself. Collect as much as you can before the fiery enemies overwhelm you!
 
 ## Getting Started
 
@@ -134,11 +132,9 @@ For the versions available, see the [tags on this repository](https://github.com
 
 * **Charles** - [bombguy](https://github.com/bombguy)
 * **Chris** - [ingochris](https://github.com/ingochris)
-* **Igor** - 
+* **Igor** - [demonictomato](https://github.com/demonictomato)
 * **Isidro** - [igomez92](https://github.com/igomez92)
-* demonictomato
-* lazylad91
-* Natasha Dsouza
+* Natasha
 * Pooja
 * Shruti
 * Skandy
