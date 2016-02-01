@@ -151,7 +151,7 @@ For the versions available, see the [tags on this repository](https://github.com
 * Jordan Yuen
 * Victor Phung
 
-See the full list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See the full list of [contributors](https://github.com/bombguy/globalgamejam2016/contributors) who participated in this project.
 
 ## License
 
